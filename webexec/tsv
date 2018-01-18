@@ -1,0 +1,59 @@
+#!/usr/local/bin/python
+#Web Service for tab separated values
+#27 Feb 2011
+#Author: Gunnar Leffler
+
+import sys, os, time, datetime
+#sys.path.append("/usr/dd/common/web_service/webexec")
+import cgi, wslib_ext as wslib, atexit
+#import cgitb; cgitb.enable()
+
+ws = wslib.dataService("../data/hydro.db")
+config = wslib.ddWebServiceConfig()
+
+
+def outputTSV(config):
+  ws.updateConfig(config)
+  maxLen = 0
+  wsData = []
+  print "Content-Type: text/plain\n"
+  #read the data and find the max length
+  output = ""
+  for tsid in config.settings["id"]:
+    t = ws.readTS(tsid[0], config.settings["start"], config.settings["end"])
+    #apply options to timeseries
+    if t != None:
+      ts = ws.applyOptions(t, config)
+      if len(ts.data) > maxLen:
+        maxLen = len(ts.data)
+    else:
+      ts = wslib.timeseries()
+    wsData.append(ts.data)
+    output += "timestamp\t" + tsid[0] + "[" + tsid[1] + "]" + "\t"
+  print cgi.escape(output)
+  #display the data
+  pattern = "%s\t%0." + config.settings["digits"] + "f\t"
+  for i in xrange(0, maxLen):
+    output = ""
+    for d in wsData:
+      if i < len(d):
+        if d[i][1] != None:
+          output += pattern % (ws.strftime(
+              d[i][0], config["timeformat"], usemidnight=config["midnight"]),
+                               d[i][1])
+        else:
+          output += "%s\t\t" % (ws.strftime(
+              d[i][0], config["timeformat"], usemidnight=config["midnight"]))
+      else:
+        output += ("\t\t")
+    print output[0:-1]
+
+
+#------------------------#
+#Beginning of Service
+#------------------------#
+if ws.status != "OK":
+  raise Exception(ws.status)
+atexit.register(ws.disconnect)
+config.parseParameters(cgi.FieldStorage())
+outputTSV(config)

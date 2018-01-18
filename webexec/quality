@@ -1,0 +1,61 @@
+#!/usr/local/bin/python
+#Web Service for tab separated values including quality codes
+#9 Sep 2017
+#Author: Gunnar Leffler
+
+import sys, os, time, datetime
+sys.path.append("/usr/dd/common/web_service/webexec")
+import cgi, wslib_ext as wslib, atexit
+import cgitb; cgitb.enable()
+
+ws = wslib.dataService("../data/hydro.db")
+config = wslib.ddWebServiceConfig()
+
+
+def outputTSV(config):
+  ws.updateConfig(config)
+  maxLen = 0
+  wsData = []
+  print "Content-Type: text/plain\n"
+  # Read the data and find the max length
+  output = ""
+  for tsid in config.settings["id"]:
+    t = ws.readTS(tsid[0], config.settings["start"], config.settings["end"],
+                  tsid[1])
+    #apply options to timeseries
+    if t != None:
+      ts = ws.applyOptions(t, config)
+      if len(ts.data) > maxLen:
+        maxLen = len(ts.data)
+    else:
+      ts = wslib.timeseries(t)
+    wsData.append(ts.data)
+    output += "timestamp\t" + tsid[0] + "[" + tsid[1] + "]" + "\t"
+  print cgi.escape(output)
+  #display the data
+  for i in xrange(0, maxLen):
+    output = ""
+    for d in wsData:
+      if i < len(d):
+        if d[i][1] != None:
+          output += "%s\t%0.3f\t%s\t" % (
+              d[i][0].strftime(config.settings["timeformat"]), d[i][1], d[i][2])
+        elif d[i][2] != None:
+          output += "%s\tmissing\t%s\t" % (
+              d[i][0].strftime(config.settings["timeformat"]), d[i][2])
+        else:
+          output += "%s\tmissing\t4\t" % (
+              d[i][0].strftime(config.settings["timeformat"]))
+      else:
+        output += ("\t\t")
+    print output[0:-1]
+
+
+#------------------------#
+#Beginning of Service
+#------------------------#
+if ws.status != "OK":
+  raise Exception(ws.status)
+atexit.register(ws.disconnect)
+config.parseParameters(cgi.FieldStorage())
+outputTSV(config)

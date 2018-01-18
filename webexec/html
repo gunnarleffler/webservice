@@ -1,0 +1,87 @@
+#!/usr/local/bin/python
+#Web Service for data presented as HTML
+#16 August 2016
+#Author: Gunnar Leffler
+
+import sys, os, time, datetime
+import cgi, atexit, wslib_ext as wslib
+#import cgitb; cgitb.enable()
+
+print "Content-Type: text/html\n"
+
+ws = wslib.dataService("../data/hydro.db")
+config = wslib.ddWebServiceConfig()
+valTable = {}  #Global variable for output values
+
+
+def generateBlankLine(count):
+  output = []
+  for i in xrange(count):
+    output.append(None)
+  return output
+
+
+def addValue(column, count, _datetime, value):
+  global valTable
+  if not _datetime in valTable:
+    valTable[_datetime] = generateBlankLine(count)
+  valTable[_datetime][column] = value
+
+
+def outputHTML(config):
+  ws.updateConfig(config)
+  wsData = []
+  output = ""
+  output += '<table class ="ws"><thead class = "ws"><tr><th class = "ws">Date Time</th>'
+  colCount = len(config.settings["id"])
+  i = 0
+  for tsid in config.settings["id"]:
+    t = ws.readTS(tsid[0], config.settings["start"],
+                  config.settings["end"]).data
+    #apply options to timeseries
+    if t != None:
+      ts = ws.applyOptions(wslib.timeseries(t), config)
+      for d in ts.data:
+        addValue(i, colCount, d[0], d[1])
+    if tsid[1] == "default":
+      tsid[1] = ws.getDefaultUnits(tsid[0])
+    output += "<th class = \"ws\">" + cgi.escape(tsid[0]) + "[" + cgi.escape(
+        tsid[1]) + "]\t" + "</th>"
+    i += 1
+  output += "</tr></thead>"
+  print output
+  #display the data
+  keylist = valTable.keys()
+  while None in keylist:
+    keylist.remove(None)
+  keylist.sort()
+  cl = "ws"
+  pattern = "%0." + config.settings["digits"] + "f\t"
+  for key in keylist:
+    if cl == "wsodd":
+      cl = "ws"
+    else:
+      cl = "wsodd"
+    output = '<tr class="' + cl + '"><td class = "ws">' + ws.strftime(
+        key, config.settings["timeformat"],
+        usemidnight=config["midnight"]) + '\t</td>'
+    for val in valTable[key]:
+      output += "<td>"
+      if val != None:
+        output += pattern % val
+      else:
+        output += "\t"
+      output += "</td>"
+    output += "</tr>"
+    print output
+  print "</table>"
+
+
+#------------------------#
+#Beginning of Service
+#------------------------#
+if ws.status != "OK":
+  raise Exception(ws.status)
+atexit.register(ws.disconnect)
+config.parseParameters(cgi.FieldStorage())
+outputHTML(config)

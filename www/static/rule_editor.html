@@ -1,0 +1,67 @@
+  <form>
+    <div class="form-group">
+      <label for="rule_name"><b>Rule Name</b></label> <input class="form-control" id="rule_name" placeholder="Enter Rule Name" type="text">
+    </div>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-md-3">
+          <label class="control-label" for="rule_start"><b>Start</b></label>
+          <div class="input-group date">
+            <input class="form-control datetimepicker-input" id="rule_start"> <span class="input-group-addon" data-target="#rule_start" data-toggle="datetimepicker"><span class="fa fa-calendar"></span></span>
+          </div>
+          <script type="text/javascript">
+                    $(function() {
+                        $('#rule_start').datetimepicker({
+                            defaultDate: "1/1/2017",
+                            format: 'L'
+                        });
+                    });
+          </script>
+        </div>
+        <div class="col-md-3">
+          <label class="control-label" for="rule_end"><b>End</b></label>
+          <div class="input-group date">
+            <input class="form-control datetimepicker-input" id="rule_end"> <span class="input-group-addon" data-target="#rule_end" data-toggle="datetimepicker"><span class="fa fa-calendar"></span></span>
+          </div>
+          <script type="text/javascript">
+                    $(function() {
+                        $('#rule_end').datetimepicker({
+                            defaultDate: "12/31/2017",
+                            format: 'L'
+                        });
+                    });
+          </script>
+        </div>
+        <div class="col-md-2">
+          <label for="rule_enabled"><b>Enabled</b></label> <select class="form-control" id="rule_enabled">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="rule_snoozed"><b>Snoozed</b></label> <select class="form-control" id="rule_snoozed">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="rule_snoozed"><b>Recurring</b></label> <select class="form-control" id="rule_recurring">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="rule_message"><b>Message</b></label> <input class="form-control" id="rule_message" placeholder="Enter Message here" type="text">
+    </div>
+    <div class="form-group">
+      <label for="rule_logic"><b>Logic</b></label>
+      <textarea class="form-control" id="rule_logic" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="rule_logic"><b>Notes</b></label>
+      <textarea class="form-control" id="rule_notes" rows="10"></textarea>
+    </div>
+    <button class="btn btn-primary" onclick="rules.doRuleSave()">Save</button>
+  </form>

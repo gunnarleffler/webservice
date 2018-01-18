@@ -1,0 +1,14 @@
+/html?id=APLO.Stage.Inst.0.0.GOES-RAW:units=ft|GRAO.Temp-Water.Inst.0.0.GOES-RAW:units=F&lookback=7&timezone=MST&headers=true&headers=true
+   <table style = "border-collapse:collapse;margin-left:auto;margin-right:auto;width:95%;">
+    <tr><td colspan = "9"><b>Settings:</b></td></tr>
+    <tr><td>Plot Title:</td><td colspan = "3"><input type = "text" id = "plotTitle"  value = "" size = "60"></input></td></tr>
+    <tr><td>Lookback (Days):</td><td><input type = "text" id = "lookback"  value = "7" size = "20"></input></td>
+    <td align = "right">Lookforward (Days):</td><td><input type = "text" id = "lookforward"  value = "" size = "20"></input></td></tr>
+    <tr><td>-or- Start Date:</td><td><input type = "text" id = "startdate"  value = "" size = "20"></input></td>
+    <td align = "right">-or- End Date:</td><td><input type = "text" id = "enddate"  value = "" size = "20"></input></td></tr>
+    <tr><td> Snap Interval (#d#h#m):</td><td><input type = "text" id = "snap"  value = "" size = "20"></input></td>
+    <td align = "right">Avg. Interval (#d#h#m):</td><td><input type = "text" id = "average"  value = "" size = "20"></input></td></tr>
+    <tr><td>Flow Units :</td><td><select id="flowunits"><option value ="">Default</option><option value ="cfs">CFS</option><option value ="kcfs">KCFS</option></select></td>
+    <td align = "right">Time Zone:</td><td><select id="timezone"><option value ="PST">PST</option><option value ="MST" selected>PDT</option><option value ="MST">MST</option><option value ="CST">MDT</option><option value ="GMT">GMT</option></select></td></tr>
+    <tr><td colspan = "9"><b>Search Results:</b></td></tr>
+   </table>

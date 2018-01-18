@@ -1,0 +1,4830 @@
+{
+  "LOS": {
+    "name": "Lost Creek Dam",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.67096,
+      "longitude": -122.674762,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 548.64,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "LOS.Elev-Forebay.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:45:00-0800",
+            1812.35,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            1812.35,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            1812.35,
+            0
+          ],
+          [
+            "2017-12-19T16:30:00-0800",
+            1812.37,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Elev-Forebay",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 4,
+        "min_value": 1812.35,
+        "max_value": 1812.37,
+        "start_time": "2017-12-19T15:45:00-0800",
+        "end_time": "2017-12-19T16:30:00-0800"
+      },
+      "LOS.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            10.60,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 10.60,
+        "max_value": 10.60,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "LOS": {
+    "name": "Lost Creek Dam",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.67096,
+      "longitude": -122.674762,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 548.64,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "LOS.Elev-Forebay.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:45:00-0800",
+            1812.35,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            1812.35,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            1812.35,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            1812.35,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Elev-Forebay",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 4,
+        "min_value": 1812.35,
+        "max_value": 1812.35,
+        "start_time": "2017-12-19T14:45:00-0800",
+        "end_time": "2017-12-19T15:30:00-0800"
+      },
+      "LOS.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            10.60,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 10.60,
+        "max_value": 10.60,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "LOS": {
+    "name": "Lost Creek Dam",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.67096,
+      "longitude": -122.674762,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 548.64,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "LOS.Elev-Forebay.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:45:00-0800",
+            1812.35,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            1812.35,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            1812.34,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            1812.36,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Elev-Forebay",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 4,
+        "min_value": 1812.34,
+        "max_value": 1812.36,
+        "start_time": "2017-12-19T13:45:00-0800",
+        "end_time": "2017-12-19T14:30:00-0800"
+      },
+      "LOS.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            10.60,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 10.60,
+        "max_value": 10.60,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "GRAO": {
+    "name": "Rogue River at Grants Pass",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.430396,
+      "longitude": -123.317837,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 269.528544,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "GRAO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            42.04,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            42.06,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            42.06,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            42.10,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            42.10,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            42.13,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            42.13,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            42.12,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 42.04,
+        "max_value": 42.12,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "GRAO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            1.75,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            1.76,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            1.76,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            1.77,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            1.77,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            1.82,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            1.86,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            1.89,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 1.75,
+        "max_value": 1.89,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "GRAO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            14.11,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 14.11,
+        "max_value": 14.11,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "GRAO": {
+    "name": "Rogue River at Grants Pass",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.430396,
+      "longitude": -123.317837,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 269.528544,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "GRAO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            41.97,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            42.03,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            42.01,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            42.06,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            42.04,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            42.06,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            42.06,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            42.10,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 41.97,
+        "max_value": 42.10,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "GRAO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            1.74,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            1.74,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            1.75,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            1.74,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            1.75,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            1.76,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            1.76,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            1.77,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 1.74,
+        "max_value": 1.77,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "GRAO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            14.11,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 14.11,
+        "max_value": 14.11,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "GRAO": {
+    "name": "Rogue River at Grants Pass",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.430396,
+      "longitude": -123.317837,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 269.528544,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "GRAO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            41.86,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            41.88,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            41.94,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            41.95,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            41.97,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            42.03,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            42.01,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            42.06,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 41.86,
+        "max_value": 42.06,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "GRAO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            1.74,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            1.74,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            1.75,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            1.75,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            1.74,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            1.74,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            1.75,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            1.74,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 1.74,
+        "max_value": 1.75,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "GRAO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            14.11,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 14.11,
+        "max_value": 14.11,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "APRO": {
+    "name": "Applegate River near Applegate",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.241511,
+      "longitude": -123.140049,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 391.768584,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APRO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            41.29,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            41.36,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            41.45,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            41.56,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            41.61,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            41.67,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            41.74,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            41.77,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 41.29,
+        "max_value": 41.77,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "APRO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            1.50,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            1.50,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            1.50,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            1.50,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            1.51,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 1.49,
+        "max_value": 1.51,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "APRO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            13.17,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.17,
+        "max_value": 13.17,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      },
+      "APRO.Volt.Inst.15Minutes.0.raw": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            13.40,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            13.30,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            13.40,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            13.30,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            13.30,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            13.20,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            13.20,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            13.20,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt",
+        "duration": "0",
+        "interval": "15Minutes",
+        "units": "volt",
+        "count": 8,
+        "min_value": 13.20,
+        "max_value": 13.40,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      }
+    }
+  }
+}
+{
+  "APRO": {
+    "name": "Applegate River near Applegate",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.241511,
+      "longitude": -123.140049,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 391.768584,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APRO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            40.93,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            41.00,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            41.09,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            41.20,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            41.29,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            41.36,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            41.45,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            41.56,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 40.93,
+        "max_value": 41.56,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "APRO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            1.50,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            1.49,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 1.49,
+        "max_value": 1.50,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "APRO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            13.41,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.41,
+        "max_value": 13.41,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      },
+      "APRO.Volt.Inst.15Minutes.0.raw": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            13.50,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            13.50,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            13.50,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            13.40,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            13.40,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            13.30,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            13.40,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            13.30,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt",
+        "duration": "0",
+        "interval": "15Minutes",
+        "units": "volt",
+        "count": 8,
+        "min_value": 13.30,
+        "max_value": 13.40,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      }
+    }
+  }
+}
+{
+  "APRO": {
+    "name": "Applegate River near Applegate",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.241511,
+      "longitude": -123.140049,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 391.768584,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APRO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            40.51,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            40.62,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            40.73,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            40.82,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            40.93,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            41.00,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            41.09,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            41.20,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 40.51,
+        "max_value": 41.20,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "APRO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            1.49,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            1.49,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 1.49,
+        "max_value": 1.49,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "APRO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            13.64,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.64,
+        "max_value": 13.64,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      },
+      "APRO.Volt.Inst.15Minutes.0.raw": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            13.50,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            13.40,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            13.50,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            13.60,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            13.50,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            13.50,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            13.50,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            13.40,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt",
+        "duration": "0",
+        "interval": "15Minutes",
+        "units": "volt",
+        "count": 8,
+        "min_value": 13.40,
+        "max_value": 13.50,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      }
+    }
+  }
+}
+{
+  "APP": {
+    "name": "Applegate Lake near Copper",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.056792,
+      "longitude": -123.109491,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 548.64,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APP.Elev-Forebay.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:45:00-0800",
+            1882.67,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            1882.67,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            1882.66,
+            0
+          ],
+          [
+            "2017-12-19T16:30:00-0800",
+            1882.67,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Elev-Forebay",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 4,
+        "min_value": 1882.66,
+        "max_value": 1882.67,
+        "start_time": "2017-12-19T15:45:00-0800",
+        "end_time": "2017-12-19T16:30:00-0800"
+      },
+      "APP.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            13.17,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.17,
+        "max_value": 13.17,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "APP": {
+    "name": "Applegate Lake near Copper",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.056792,
+      "longitude": -123.109491,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 548.64,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APP.Elev-Forebay.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:45:00-0800",
+            1882.68,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            1882.66,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            1882.68,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            1882.67,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Elev-Forebay",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 4,
+        "min_value": 1882.66,
+        "max_value": 1882.67,
+        "start_time": "2017-12-19T14:45:00-0800",
+        "end_time": "2017-12-19T15:30:00-0800"
+      },
+      "APP.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            13.17,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.17,
+        "max_value": 13.17,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "APP": {
+    "name": "Applegate Lake near Copper",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.056792,
+      "longitude": -123.109491,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 548.64,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APP.Elev-Forebay.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:45:00-0800",
+            1882.68,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            1882.68,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            1882.68,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            1882.69,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Elev-Forebay",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 4,
+        "min_value": 1882.68,
+        "max_value": 1882.69,
+        "start_time": "2017-12-19T13:45:00-0800",
+        "end_time": "2017-12-19T14:30:00-0800"
+      },
+      "APP.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            13.17,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.17,
+        "max_value": 13.17,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "EGLO": {
+    "name": "Rogue River at Dodge Bridge",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.524847,
+      "longitude": -122.84282,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 387.702552,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "EGLO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            43.39,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            43.43,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            43.45,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            43.48,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            43.54,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            43.54,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            43.59,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            43.59,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 43.39,
+        "max_value": 43.59,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "EGLO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            3.00,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            3.00,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            3.00,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            3.00,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            3.00,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            3.01,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            3.02,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            3.02,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 3.00,
+        "max_value": 3.02,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "EGLO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            13.88,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.88,
+        "max_value": 13.88,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "EGLO": {
+    "name": "Rogue River at Dodge Bridge",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.524847,
+      "longitude": -122.84282,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 387.702552,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "EGLO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            43.23,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            43.29,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            43.30,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            43.36,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            43.39,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            43.43,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            43.45,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            43.48,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 43.23,
+        "max_value": 43.48,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "EGLO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            2.98,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            2.99,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            2.99,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            2.99,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            3.00,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            3.00,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            3.00,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            3.00,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.98,
+        "max_value": 3.00,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "EGLO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            13.88,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.88,
+        "max_value": 13.88,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "EGLO": {
+    "name": "Rogue River at Dodge Bridge",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.524847,
+      "longitude": -122.84282,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 387.702552,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "EGLO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            43.07,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            43.12,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            43.18,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            43.20,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            43.23,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            43.29,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            43.30,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            43.36,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 43.07,
+        "max_value": 43.36,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "EGLO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            2.98,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            2.98,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            2.98,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            2.98,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            2.98,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            2.99,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            2.99,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            2.99,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.98,
+        "max_value": 2.99,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "EGLO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            13.88,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.88,
+        "max_value": 13.88,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "APPO": {
+    "name": "Applegate River near Copper",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.063736,
+      "longitude": -123.111436,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 532.6410480000001,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APPO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            1.63,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            1.65,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            1.64,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 1.63,
+        "max_value": 1.64,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "APPO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            41.31,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            41.27,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            41.23,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            41.22,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            41.18,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            41.16,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            41.18,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            41.14,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 41.14,
+        "max_value": 41.18,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "APPO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            14.34,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 14.34,
+        "max_value": 14.34,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "APPO": {
+    "name": "Applegate River near Copper",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.063736,
+      "longitude": -123.111436,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 532.6410480000001,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APPO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            1.63,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            1.64,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 1.63,
+        "max_value": 1.64,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "APPO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            41.40,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            41.40,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            41.38,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            41.34,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            41.31,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            41.27,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            41.23,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            41.22,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 41.22,
+        "max_value": 41.40,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "APPO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            14.34,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 14.34,
+        "max_value": 14.34,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "APPO": {
+    "name": "Applegate River near Copper",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.063736,
+      "longitude": -123.111436,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 532.6410480000001,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APPO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            1.63,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            1.63,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            1.63,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            1.64,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            1.64,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 1.63,
+        "max_value": 1.64,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "APPO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            41.38,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            41.45,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            41.43,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            41.38,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            41.40,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            41.40,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            41.38,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            41.34,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 41.34,
+        "max_value": 41.40,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "APPO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            14.34,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 14.34,
+        "max_value": 14.34,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "MCLO": {
+    "name": "McLeod",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.655404,
+      "longitude": -122.715041,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 453.871584,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "MCLO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            42.62,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            42.62,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            42.62,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            42.62,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 42.62,
+        "max_value": 42.80,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "MCLO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            2.19,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            2.19,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            2.19,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            2.20,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.18,
+        "max_value": 2.20,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "MCLO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            12.4720,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "volt",
+        "count": 1,
+        "min_value": 12.4720,
+        "max_value": 12.4720,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "MCLO": {
+    "name": "McLeod",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.655404,
+      "longitude": -122.715041,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 453.871584,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "MCLO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            42.80,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 42.80,
+        "max_value": 42.80,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "MCLO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            2.17,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            2.17,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            2.18,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.17,
+        "max_value": 2.18,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "MCLO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            12.4720,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "volt",
+        "count": 1,
+        "min_value": 12.4720,
+        "max_value": 12.4720,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "MCLO": {
+    "name": "McLeod",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.655404,
+      "longitude": -122.715041,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 453.871584,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "MCLO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            42.62,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            42.80,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            42.80,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 42.62,
+        "max_value": 42.80,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "MCLO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            2.20,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            2.19,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            2.18,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            2.17,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            2.17,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            2.18,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.17,
+        "max_value": 2.18,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "MCLO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            12.4720,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "volt",
+        "count": 1,
+        "min_value": 12.4720,
+        "max_value": 12.4720,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "MLBO": {
+    "name": "Big Butte",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.651237,
+      "longitude": -122.691429,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 465.10956000000004,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "MLBO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:30:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            2.91,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            2.91,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.90,
+        "max_value": 2.91,
+        "start_time": "2017-12-19T14:30:00-0800",
+        "end_time": "2017-12-19T16:15:00-0800"
+      },
+      "MLBO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            14.34,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 14.34,
+        "max_value": 14.34,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "MLBO": {
+    "name": "Big Butte",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.651237,
+      "longitude": -122.691429,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 465.10956000000004,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "MLBO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:30:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            2.90,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.90,
+        "max_value": 2.90,
+        "start_time": "2017-12-19T13:30:00-0800",
+        "end_time": "2017-12-19T15:15:00-0800"
+      },
+      "MLBO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            14.34,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 14.34,
+        "max_value": 14.34,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "MLBO": {
+    "name": "Big Butte",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.651237,
+      "longitude": -122.691429,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 465.10956000000004,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "MLBO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:30:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T12:45:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            2.90,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            2.90,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.90,
+        "max_value": 2.90,
+        "start_time": "2017-12-19T12:30:00-0800",
+        "end_time": "2017-12-19T14:15:00-0800"
+      },
+      "MLBO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            14.34,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 14.34,
+        "max_value": 14.34,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "ELKO": {
+    "name": "Elk Creek near Trail",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.678736,
+      "longitude": -122.741987,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 455.34376800000007,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "ELKO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:45:00-0800",
+            37.18,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            37.22,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            37.29,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            37.31,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            37.33,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            37.40,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            37.44,
+            0
+          ],
+          [
+            "2017-12-19T16:30:00-0800",
+            37.44,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 37.18,
+        "max_value": 37.44,
+        "start_time": "2017-12-19T14:45:00-0800",
+        "end_time": "2017-12-19T16:30:00-0800"
+      },
+      "ELKO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:45:00-0800",
+            2.72,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            2.74,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            2.74,
+            0
+          ],
+          [
+            "2017-12-19T16:30:00-0800",
+            2.74,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.72,
+        "max_value": 2.74,
+        "start_time": "2017-12-19T14:45:00-0800",
+        "end_time": "2017-12-19T16:30:00-0800"
+      },
+      "ELKO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            11.87,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 11.87,
+        "max_value": 11.87,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "ELKO": {
+    "name": "Elk Creek near Trail",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.678736,
+      "longitude": -122.741987,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 455.34376800000007,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "ELKO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:45:00-0800",
+            36.95,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            36.99,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            37.08,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            37.15,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            37.18,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            37.22,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            37.29,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            37.31,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 36.95,
+        "max_value": 37.31,
+        "start_time": "2017-12-19T13:45:00-0800",
+        "end_time": "2017-12-19T15:30:00-0800"
+      },
+      "ELKO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:45:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            2.72,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            2.72,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            2.73,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.72,
+        "max_value": 2.73,
+        "start_time": "2017-12-19T13:45:00-0800",
+        "end_time": "2017-12-19T15:30:00-0800"
+      },
+      "ELKO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            11.87,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 11.87,
+        "max_value": 11.87,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "ELKO": {
+    "name": "Elk Creek near Trail",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.678736,
+      "longitude": -122.741987,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 455.34376800000007,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "ELKO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:45:00-0800",
+            36.63,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            36.73,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            36.81,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            36.90,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            36.95,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            36.99,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            37.08,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            37.15,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 36.63,
+        "max_value": 37.15,
+        "start_time": "2017-12-19T12:45:00-0800",
+        "end_time": "2017-12-19T14:30:00-0800"
+      },
+      "ELKO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:45:00-0800",
+            2.72,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            2.72,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            2.72,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            2.73,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            2.73,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.72,
+        "max_value": 2.73,
+        "start_time": "2017-12-19T12:45:00-0800",
+        "end_time": "2017-12-19T14:30:00-0800"
+      },
+      "ELKO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            11.87,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 11.87,
+        "max_value": 11.87,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "PRSO": {
+    "name": "Prospect",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.729572,
+      "longitude": -122.516147,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 598.7978880000001,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "PRSO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:45:00-0800",
+            2.23,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            2.26,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            2.19,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            2.23,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            2.27,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            2.30,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            2.30,
+            0
+          ],
+          [
+            "2017-12-19T16:30:00-0800",
+            2.30,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.19,
+        "max_value": 2.30,
+        "start_time": "2017-12-19T14:45:00-0800",
+        "end_time": "2017-12-19T16:30:00-0800"
+      },
+      "PRSO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:45:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            38.30,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            38.30,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            38.30,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            38.30,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            38.30,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            38.30,
+            0
+          ],
+          [
+            "2017-12-19T16:30:00-0800",
+            38.30,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 38.12,
+        "max_value": 38.30,
+        "start_time": "2017-12-19T14:45:00-0800",
+        "end_time": "2017-12-19T16:30:00-0800"
+      },
+      "PRSO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            13.41,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.41,
+        "max_value": 13.41,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "PRSO": {
+    "name": "Prospect",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.729572,
+      "longitude": -122.516147,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 598.7978880000001,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "PRSO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:45:00-0800",
+            2.25,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            2.26,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            2.26,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            2.22,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            2.23,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            2.26,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            2.19,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            2.23,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.19,
+        "max_value": 2.23,
+        "start_time": "2017-12-19T13:45:00-0800",
+        "end_time": "2017-12-19T15:30:00-0800"
+      },
+      "PRSO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:45:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            38.30,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            38.30,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            38.30,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 38.12,
+        "max_value": 38.30,
+        "start_time": "2017-12-19T13:45:00-0800",
+        "end_time": "2017-12-19T15:30:00-0800"
+      },
+      "PRSO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            13.41,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.41,
+        "max_value": 13.41,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "PRSO": {
+    "name": "Prospect",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.729572,
+      "longitude": -122.516147,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 598.7978880000001,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "PRSO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:45:00-0800",
+            2.24,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            2.20,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            2.22,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            2.26,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            2.25,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            2.26,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            2.26,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            2.22,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 2.20,
+        "max_value": 2.22,
+        "start_time": "2017-12-19T12:45:00-0800",
+        "end_time": "2017-12-19T14:30:00-0800"
+      },
+      "PRSO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:45:00-0800",
+            37.94,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            37.94,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            38.12,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            38.12,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 37.94,
+        "max_value": 38.12,
+        "start_time": "2017-12-19T12:45:00-0800",
+        "end_time": "2017-12-19T14:30:00-0800"
+      },
+      "PRSO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            13.41,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 13.41,
+        "max_value": 13.41,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "AGNO": {
+    "name": "Rogue River near Agness",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.578442,
+      "longitude": -124.058144,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 34.689288000000005,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "AGNO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:45:00-0800",
+            42.69,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            42.73,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            42.40,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            42.40,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            42.40,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            42.42,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            42.40,
+            0
+          ],
+          [
+            "2017-12-19T16:30:00-0800",
+            42.44,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 42.40,
+        "max_value": 42.44,
+        "start_time": "2017-12-19T14:45:00-0800",
+        "end_time": "2017-12-19T16:30:00-0800"
+      },
+      "AGNO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:45:00-0800",
+            3.44,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            3.48,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            3.49,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            3.50,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            3.51,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            3.52,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            3.53,
+            0
+          ],
+          [
+            "2017-12-19T16:30:00-0800",
+            3.53,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 3.44,
+        "max_value": 3.53,
+        "start_time": "2017-12-19T14:45:00-0800",
+        "end_time": "2017-12-19T16:30:00-0800"
+      },
+      "AGNO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            12.18,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 12.18,
+        "max_value": 12.18,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "AGNO": {
+    "name": "Rogue River near Agness",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.578442,
+      "longitude": -124.058144,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 34.689288000000005,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "AGNO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:45:00-0800",
+            42.60,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            42.66,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            42.67,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            42.69,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            42.69,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            42.73,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            42.40,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            42.40,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 42.40,
+        "max_value": 42.73,
+        "start_time": "2017-12-19T13:45:00-0800",
+        "end_time": "2017-12-19T15:30:00-0800"
+      },
+      "AGNO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:45:00-0800",
+            3.39,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            3.41,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            3.42,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            3.44,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            3.44,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            3.48,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            3.49,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            3.50,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 3.39,
+        "max_value": 3.50,
+        "start_time": "2017-12-19T13:45:00-0800",
+        "end_time": "2017-12-19T15:30:00-0800"
+      },
+      "AGNO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            12.18,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 12.18,
+        "max_value": 12.18,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "AGNO": {
+    "name": "Rogue River near Agness",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.578442,
+      "longitude": -124.058144,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 34.689288000000005,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "AGNO.Temp-Water.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:45:00-0800",
+            42.49,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            42.55,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            42.57,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            42.60,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            42.60,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            42.66,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            42.67,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            42.69,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Temp-Water",
+        "duration": "0",
+        "interval": "0",
+        "units": "degF",
+        "count": 8,
+        "min_value": 42.49,
+        "max_value": 42.69,
+        "start_time": "2017-12-19T12:45:00-0800",
+        "end_time": "2017-12-19T14:30:00-0800"
+      },
+      "AGNO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T12:45:00-0800",
+            3.37,
+            0
+          ],
+          [
+            "2017-12-19T13:00:00-0800",
+            3.37,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            3.38,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            3.38,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            3.39,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            3.41,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            3.42,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            3.44,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": 3.37,
+        "max_value": 3.44,
+        "start_time": "2017-12-19T12:45:00-0800",
+        "end_time": "2017-12-19T14:30:00-0800"
+      },
+      "AGNO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            12.18,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "V",
+        "count": 1,
+        "min_value": 12.18,
+        "max_value": 12.18,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "APLO": {
+    "name": "Little Applegate",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.1759592,
+      "longitude": -123.0019862,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 497.40312000000006,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APLO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T16:00:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T16:15:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T16:30:00-0800",
+            -0.20,
+            0
+          ],
+          [
+            "2017-12-19T16:45:00-0800",
+            -0.20,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": -0.21,
+        "max_value": -0.20,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T16:45:00-0800"
+      },
+      "APLO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T16:00:00-0800",
+            12.94,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "C",
+        "count": 1,
+        "min_value": 12.94,
+        "max_value": 12.94,
+        "start_time": "2017-12-19T16:00:00-0800",
+        "end_time": "2017-12-19T16:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "APLO": {
+    "name": "Little Applegate",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.1759592,
+      "longitude": -123.0019862,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 497.40312000000006,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APLO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T15:00:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T15:15:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T15:30:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T15:45:00-0800",
+            -0.21,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": -0.21,
+        "max_value": -0.21,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T15:45:00-0800"
+      },
+      "APLO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T15:00:00-0800",
+            13.17,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "C",
+        "count": 1,
+        "min_value": 13.17,
+        "max_value": 13.17,
+        "start_time": "2017-12-19T15:00:00-0800",
+        "end_time": "2017-12-19T15:00:00-0800"
+      }
+    }
+  }
+}
+{
+  "APLO": {
+    "name": "Little Applegate",
+    "responsibility": "",
+    "coordinates": {
+      "latitude": 42.1759592,
+      "longitude": -123.0019862,
+      "datum": "NAD83",
+    },
+    "HUC": ""
+    "elevation": {
+      "value": 497.40312000000006,
+      "accuracy": 0.0,
+      "datum": "NGVD29",
+      "method": "",
+    },
+    "timezone": "UTC"
+    "tz_offset": 0.0
+    "active_flag": "T"
+    "location_type": "",
+    "timeseries": {
+      "APLO.Stage.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T13:00:00-0800",
+            -0.22,
+            0
+          ],
+          [
+            "2017-12-19T13:15:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T13:30:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T13:45:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T14:00:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T14:15:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T14:30:00-0800",
+            -0.21,
+            0
+          ],
+          [
+            "2017-12-19T14:45:00-0800",
+            -0.21,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Stage",
+        "duration": "0",
+        "interval": "0",
+        "units": "ft",
+        "count": 8,
+        "min_value": -0.22,
+        "max_value": -0.21,
+        "start_time": "2017-12-19T13:00:00-0800",
+        "end_time": "2017-12-19T14:45:00-0800"
+      },
+      "APLO.Volt-Battery.Inst.0.0.GOES-RAW": {
+        "values": [
+          [
+            "2017-12-19T14:00:00-0800",
+            13.41,
+            0
+          ]
+        ],
+        "quality_type": "string",
+        "parameter": "Volt-Battery",
+        "duration": "0",
+        "interval": "0",
+        "units": "C",
+        "count": 1,
+        "min_value": 13.41,
+        "max_value": 13.41,
+        "start_time": "2017-12-19T14:00:00-0800",
+        "end_time": "2017-12-19T14:00:00-0800"
+      }
+    }
+  }
+}
