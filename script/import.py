@@ -1,4 +1,4 @@
-#!/usr/local/bin/python -u
+#!/usr/bin/python
 
 helpText = """
 import.py
@@ -11,7 +11,8 @@ this program imports data into the webservice database data/hydro.db
 import sys
 sys.path.append("../www")
 
-import atexit, argparse
+import atexit
+import argparse
 import datetime
 import hydro_lib
 import json
@@ -56,12 +57,12 @@ def storeCwmsMeta(d):
       [], table="sitecatalog", keys=hydro_lib.schemas["sitecatalog"])
   for key in pisces_cwms_map:
     r[key] = d[pisces_cwms_map[key]]
-  logSQL(r.store(hydro_lib.cur))
-  hydro_lib.dbconn.commit()
+  logSQL(r.store(cur))
+  dbconn.commit()
 
 
 def storeHydroJSONMeta(siteid, site):
-  #Store metadata that comes in from a HydroJSON file
+  # Store metadata that comes in from a HydroJSON file
   r = hydro_lib.rec(
       [], table="sitecatalog", keys=hydro_lib.schemas["sitecatalog"])
   for key in pisces_cwms_map:
@@ -73,8 +74,8 @@ def storeHydroJSONMeta(siteid, site):
   r["vertical_datum"] = site.get("vertical_datum", {}).get("value", 0)
   r["latitude"] = site.get("coordinates", {}).get("latitude", 0)
   r["longitude"] = site.get("coordinates", {}).get("longitude", 0)
-  logSQL(r.store(hydro_lib.cur))
-  hydro_lib.dbconn.commit()
+  logSQL(r.store(cur))
+  dbconn.commit()
 
 
 # Logging Methods
@@ -126,12 +127,12 @@ def getDefaultUnits(tsid):
 def tsFromList(lst):
   ts = hydro_lib.timeseries()
   for line in lst:
-    #try:
+    # try:
     tstamp = tstamp = dateparser.parse(line[0], fuzzy=True)
     if tstamp.tzinfo == None:
       tstamp = mytz.localize(tstamp)
     ts.insert(tstamp, float(line[1]))
-  #except:
+  # except:
   #  log ("Error Parsing %s" % str(line), level = "ERR")
   return ts
 
@@ -147,7 +148,7 @@ def storeJSON(j, fmt):
       parts = tsid.split(".")
       r = hydro_lib.rec(
           [], table="seriescatalog", keys=hydro_lib.schemas["seriescatalog"])
-      r = r.get(hydro_lib.cur, "name", tsid)
+      r = r.get(cur, "name", tsid)
       r["name"] = tsid
       r["tablename"] = hydro_lib.makeTablename(tsid)
       r["siteid"] = siteid
@@ -156,13 +157,13 @@ def storeJSON(j, fmt):
       ts = tsFromList(j[siteid]["timeseries"][tsid].get("values", []))
       if len(ts.data) > 0:
         newdata = hydro_lib.writeTS(
-            r["tablename"], ts, replace_table=replace_flag)
+            r["tablename"], ts, dbconn, replace_table=replace_flag)
         logSQL(newdata)
       log("Wrote %d values: %s" % (len(ts.data), hydro_lib.status))
       #r["notes"] = getTSextents(tsid)
-      #print r["notes"]
-      logSQL(r.store(hydro_lib.cur))
-    hydro_lib.dbconn.commit()
+      # print r["notes"]
+      logSQL(r.store(cur))
+    dbconn.commit()
 
 
 def postJSON(infile, fmt="hydroJSON"):
@@ -171,17 +172,17 @@ def postJSON(infile, fmt="hydroJSON"):
     endflag = False
     for line in infile:
       line = line.rstrip()
-      #Fix lazy JSON errors (looking at you Mike)
+      # Fix lazy JSON errors (looking at you Mike)
       if len(raw) > 0 and len(line) > 0:
         if len(raw[-1]) > 1:
           if line.strip()[0] != "}" and raw[-1][-1] != "," and "{" not in raw[
-              -1] and "[" not in raw[-1]:
+                  -1] and "[" not in raw[-1]:
             raw[-1] += ","
           if line.strip()[0] == "}" and raw[-1][-1] == ",":
             raw[-1] = raw[-1][:-1]
           if line.strip()[0] == "]" and raw[-1][-1] == ",":
             raw[-1] = raw[-1][:-1]
-      #End Fix
+      # End Fix
       if line == "{" and endflag:
         if raw != []:
           storeJSON("\n".join(raw), fmt)
@@ -234,11 +235,12 @@ ds.connect()
 if ds.status != "OK":
   raise Exception(ds.status)
 atexit.register(ds.disconnect)
-#file where SQL is written
+# file where SQL is written
 if args.logsql:
   sf = open(conf["sql_path"], "w")
-
-#When we upgrade to python 3.3+ use the following to log SQL:hydro_lib.dbconn.set_trace_callback(logSQL)
+dbconn = hydro_lib.connect("../data/hydro.db")
+cur = dbconn.cursor()
+# When we upgrade to python 3.3+ use the following to log SQL:hydro_lib.dbconn.set_trace_callback(logSQL)
 print "hydrolib: " + hydro_lib.status
 print "Connection: " + ds.configuration["dbname"]
 
@@ -247,6 +249,6 @@ if args.hydroJSON:
 else:
   log("Input format not specified.", level="FATAL")
 
-#Close differences file
+# Close differences file
 if args.logsql:
   sf.close()

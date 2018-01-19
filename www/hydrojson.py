@@ -1,29 +1,25 @@
 #!/usr/local/bin/python
-import cgi, cgitb, datetime, dateutil.parser, hydro_lib, json, os, sys, urllib
-#cgitb.enable()
-config = {
-    "startdt": datetime.datetime.now() - datetime.timedelta(days=1),
-    "enddt": datetime.datetime.now(),
-    "forward": "0d",
-    "backward": "1d",
-    "time_format": "%Y-%m-%dT%H:%M:%S%z",
-    "timezone": "PST",
-    "midnight": False,
-    "tz_offset": -8
-}
+import datetime
+import dateutil.parser
+import hydro_lib
+import json
+import os
+import sys
+import urllib
+
 
 ###############################################################################
 
 
 def complain(e):
-  print '{\n"error":"' + e + '"\n}'
+  return '{\n"error":"' + e + '"\n}'
 
 
 ###############################################################################
 # Return a catalog of sites (locations) only
 
 
-def site_catalog(search_criteria):
+def site_catalog(search_criteria, config):
   output = {}
   tokens = []
   try:
@@ -36,7 +32,7 @@ def site_catalog(search_criteria):
   r = hydro_lib.rec(
       [], table="sitecatalog", keys=hydro_lib.schemas["sitecatalog"])
   for token in tokens:
-    t = r.search(hydro_lib.cur, "siteid", token)
+    t = r.search(config["cur"], "siteid", token)
     for key in t:
       output[key] = hydro_lib.new_site(t[key], conf=config)
   return output
@@ -46,7 +42,7 @@ def site_catalog(search_criteria):
 # Return a catalog of sites and timeseries names
 
 
-def ts_catalog(search_criteria):
+def ts_catalog(search_criteria, config):
   output = {}
   tokens = []
   try:
@@ -69,18 +65,18 @@ def ts_catalog(search_criteria):
 
   for token in tokens:
     token = token.replace(" ", "%")
-    t = series.search(hydro_lib.cur, "name", "%" + token + "%")
-    sites = site.search(hydro_lib.cur, "description", "%" + token + "%")
+    t = series.search(config["cur"], "name", "%" + token + "%")
+    sites = site.search(config["cur"], "description", "%" + token + "%")
     for key in sites:
-      t.update(series.search(hydro_lib.cur, "name", sites[key]["siteid"] + "%"))
+      t.update(series.search(config["cur"], "name", sites[key]["siteid"] + "%"))
     for key in t:
       siteid = t[key]["siteid"]
       if siteid in output:
-        output[siteid]["timeseries"][key] = {"notes":t[key]["notes"]}
+        output[siteid]["timeseries"][key] = {"notes": t[key]["notes"]}
       else:
-        s = site.get(hydro_lib.cur, "siteid", siteid)
+        s = site.get(config["cur"], "siteid", siteid)
         output[siteid] = hydro_lib.new_site(s, conf=config)
-        output[siteid]["timeseries"][key] = {"notes":t[key]["notes"]}
+        output[siteid]["timeseries"][key] = {"notes": t[key]["notes"]}
         output[siteid]["time_format"] = config["time_format"]
         output[siteid]["tz_offset"] = config["tz_offset"]
   return output
@@ -89,15 +85,16 @@ def ts_catalog(search_criteria):
 ###############################################################################
 
 
-def query(search_criteria):
-  output = ts_catalog(search_criteria)
+def query(search_criteria, config):
+  output = ts_catalog(search_criteria, config)
   series = hydro_lib.rec(
       [], table="seriescatalog", keys=hydro_lib.schemas["seriescatalog"])
   for siteid in output:
     for tsid in output[siteid]["timeseries"]:
-      s = series.get(hydro_lib.cur, "name", tsid)
+      s = series.get(config["cur"], "name", tsid)
       ts = hydro_lib.readTS(
           s["tablename"],
+          config["dbconn"],
           config["startdt"],
           config["enddt"],
           timezone=config['timezone'])
@@ -136,42 +133,50 @@ def query(search_criteria):
 #      "midnight" specifying this parameter causes midnight values to be displayed as 2400
 
 
-
 def parseCommandLine(form):
-  global config
+  config = {
+      "startdt": datetime.datetime.now() - datetime.timedelta(days=1),
+      "enddt": datetime.datetime.now(),
+      "forward": "0d",
+      "backward": "1d",
+      "time_format": "%Y-%m-%dT%H:%M:%S%z",
+      "timezone": "PST",
+      "midnight": False,
+      "tz_offset": -8
+  }
   ts = hydro_lib.timeSeries()
 
   if "startdate" in form:
-    config["startdt"] = dateutil.parser.parse(form["startdate"].value)
+    config["startdt"] = dateutil.parser.parse(form["startdate"])
   elif "startdt" in form:
-    config["startdt"] = dateutil.parser.parse(form["startdt"].value)
+    config["startdt"] = dateutil.parser.parse(form["startdt"])
   elif "backward" in form:
     config["startdt"] = (
-        config["enddt"] - ts.parseTimedelta(form["backward"].value))
+        config["enddt"] - ts.parseTimedelta(form["backward"]))
 
   if "enddate" in form:
-    config["enddt"] = dateutil.parser.parse(form["enddate"].value)
+    config["enddt"] = dateutil.parser.parse(form["enddate"])
   elif "enddt" in form:
-    config["enddt"] = dateutil.parser.parse(form["enddt"].value)
+    config["enddt"] = dateutil.parser.parse(form["enddt"])
   elif "forward" in form:
     config["enddt"] = (
-        config["enddt"] + ts.parseTimedelta(form["forward"].value))
+        config["enddt"] + ts.parseTimedelta(form["forward"]))
 
   if "time_format" in form:
-    config["time_format"] = form["time_format"].value
+    config["time_format"] = form["time_format"]
 
   if "midnight" in form:
     config["midnight"] = True
 
   if "filterstart" in form and "filterend" in form:
     config["fsd"] = dateutil.parser.parse(
-        form["filterstart"].value).timetuple().tm_yday
+        form["filterstart"]).timetuple().tm_yday
     config["fed"] = dateutil.parser.parse(
-        form["filterend"].value).timetuple().tm_yday
+        form["filterend"]).timetuple().tm_yday
 
   val = 0
   if "tz_offset" in form:
-    val = form["tz_offset"].value
+    val = form["tz_offset"]
   if val != 0:
     try:
       config["tz_offset"] = float(val)
@@ -180,31 +185,12 @@ def parseCommandLine(form):
 
   if "timezone" in form:
     tzoffsets = {"PST": -8, "MST": -7, "CST": -6, "EST": -5, "GMT": 0}
-    tz = form["timezone"].value
+    tz = form["timezone"]
     config["timezone"] = tz
     if tz in tzoffsets:
       config["tz_offset"] = tzoffsets[tz]
+  return config
 
 
 ###############################################################################
 ###############################################################################
-
-qs = cgi.FieldStorage()
-
-print "Content-Type: text/plain\n\n"
-try:
-  parseCommandLine(qs)
-except:
-  print '{"Error":"Invalid Request"}'
-
-result = []
-if "catalog" in qs:
-  result = site_catalog(qs["catalog"].value)
-elif "tscatalog" in qs:
-  result = ts_catalog(qs["tscatalog"].value)
-elif "query" in qs:
-  result = query(qs["query"].value)
-else:
-  complain("No Parameters Given!")
-
-print json.dumps(result, sort_keys=True, indent=3)

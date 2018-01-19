@@ -222,7 +222,7 @@ def new_timeseries(s, ts, conf={}, dFamily=None):
 ###############################################################################
 
 
-def readTS(tsid, start_time=None, end_time=None, timezone=None):
+def readTS(tsid, dbconn, start_time=None, end_time=None, timezone=None):
   global status
   cur = dbconn.cursor()
   ts = timeSeries()
@@ -249,7 +249,7 @@ def readTS(tsid, start_time=None, end_time=None, timezone=None):
 ###############################################################################
 
 
-def writeTS(tsid, ts, replace_table=False):
+def writeTS(tsid, ts, dbconn, replace_table=False):
   output = []
   status = ""
   cur = dbconn.cursor()
@@ -285,7 +285,7 @@ def makeTablename(ts_id):
   return "TS_" + hashlib.sha1(ts_id).hexdigest().upper()[:10]
 
 
-def max_datetime(ts_id):
+def max_datetime(ts_id, dbconn):
   max = None
   sql = "SELECT MAX( datetime ) FROM %s" % (makeTablename(ts_id))
   cur = dbconn.cursor()
@@ -300,7 +300,7 @@ def max_datetime(ts_id):
   return max
 
 
-def min_datetime(ts_id):
+def min_datetime(ts_id, dbconn):
   min = None
   sql = "SELECT MIN( datetime ) FROM %s" % (makeTablename(ts_id))
   cur = dbconn.cursor()
@@ -821,14 +821,13 @@ timeSeries = timeseries
 
 
 def connect(dbpath):
-  global dbconn
-  global cur
   try:
     dbconn = sqlite3.connect(dbpath)
-    cur = dbconn.cursor()
     if not dbconn:
       status = "\nCould not connect to %s\n" % dbpath
       status += "\n%s"
+    else:
+      return dbconn
   except Exception, e:
     status = "\nCould not connect to %s\n" % dbpath
     status += "\n%s" + str(e)
@@ -836,7 +835,4 @@ def connect(dbpath):
 
 #---setup database connection
 
-dbconn = None
-cur = None
 status = "OK"
-connect("../data/hydro.db")

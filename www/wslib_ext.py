@@ -31,8 +31,7 @@ class dataService:
 
   #Stub method for backwards compatibility
   def connect(self):
-    hydro_lib.connect(self.dbpath)
-    self.dbconn = hydro_lib.dbconn
+    self.dbconn = hydro_lib.connect(self.dbpath)
     #Set status to hydro_lib's status
     self.status = hydro_lib.status
 
