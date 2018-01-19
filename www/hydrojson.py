@@ -1,4 +1,3 @@
-#!/usr/local/bin/python
 import datetime
 import dateutil.parser
 import hydro_lib

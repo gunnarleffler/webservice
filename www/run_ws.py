@@ -107,6 +107,7 @@ def outputCSV():
         output += ",,"
     output += "\n"
   ws.disconnect()
+  return Response("\n".join(output), mimetype=mimetype)
 
 
 @app.route('/html', methods=['GET', 'POST'])

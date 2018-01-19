@@ -1,0 +1,40 @@
+INFO    01/19/18 01:58:37 DCS Toolkit GUI Version OPENDCS 6.4 RC07 built on Jan 12, 2018 Starting
+INFO    01/19/18 01:58:37 Loading NwsXref from '/home/opendcs/OPENDCS/nwsxref.txt'
+INFO    01/19/18 01:58:37 Loading Channel Map from '/home/opendcs/OPENDCS/chans_by_baud.txt'
+INFO    01/19/18 01:58:37 Channel map successfully loaded.
+INFO    01/19/18 01:58:37 Lock file '/home/opendcs/OPENDCS/chans_by_baud.txt.lock' does not exist or is not readable.
+INFO    01/19/18 01:58:37 Obtained lock file '/home/opendcs/OPENDCS/chans_by_baud.txt.lock' -- proceeding with download.
+INFO    01/19/18 01:58:37 Downloading 'https://dcs1.noaa.gov/chans_by_baud.txt' to '/home/opendcs/OPENDCS/chans_by_baud.txt.180118'
+INFO    01/19/18 01:58:37 Parsed NwsXref File '/home/opendcs/OPENDCS/nwsxref.txt' - 9838 entries.
+INFO    01/19/18 01:58:38 Lock file '/home/opendcs/OPENDCS/nwsxref.txt.lock' does not exist or is not readable.
+INFO    01/19/18 01:58:38 Obtained lock file '/home/opendcs/OPENDCS/nwsxref.txt.lock' -- proceeding with download.
+INFO    01/19/18 01:58:38 Downloading 'http://www.nws.noaa.gov/oh/hads/USGS/ALL_USGS-HADS_SITES.txt' to '/home/opendcs/OPENDCS/nwsxref.txt.180118'
+INFO    01/19/18 01:58:38 Lock file '/home/opendcs/OPENDCS/pdt.lock' does not exist or is not readable.
+INFO    01/19/18 01:58:38 Obtained lock file '/home/opendcs/OPENDCS/pdt.lock' -- proceeding with download.
+INFO    01/19/18 01:58:38 Downloading 'https://dcs1.noaa.gov/pdts_compressed.txt' to '/home/opendcs/OPENDCS/pdt.180118'
+INFO    01/19/18 01:58:39 CDT Download complete, file size=5440
+INFO    01/19/18 01:58:39 Copying Channels to '/home/opendcs/OPENDCS/chans_by_baud.txt'
+INFO    01/19/18 01:58:39 Loading Channel Map from '/home/opendcs/OPENDCS/chans_by_baud.txt'
+INFO    01/19/18 01:58:39 Channel map successfully loaded.
+INFO    01/19/18 01:58:39 Lock file '/home/opendcs/OPENDCS/chans_by_baud.txt.lock' removed.
+INFO    01/19/18 01:58:39 NwsXref Download complete, file size=930951
+INFO    01/19/18 01:58:39 Copying NwsXref to '/home/opendcs/OPENDCS/nwsxref.txt'
+INFO    01/19/18 01:58:39 Loading NwsXref from '/home/opendcs/OPENDCS/nwsxref.txt'
+INFO    01/19/18 01:58:39 Parsed NwsXref File '/home/opendcs/OPENDCS/nwsxref.txt' - 9838 entries.
+INFO    01/19/18 01:58:39 Lock file '/home/opendcs/OPENDCS/nwsxref.txt.lock' removed.
+INFO    01/19/18 01:58:43 PDT downloaded to '/home/opendcs/OPENDCS/pdt.180118', file size=10104889
+INFO    01/19/18 01:58:43 Merging PDT to '/home/opendcs/OPENDCS/pdt'
+INFO    01/19/18 01:58:43 Pdt saved to '/home/opendcs/OPENDCS/pdt' -- 42006 entries.
+INFO    01/19/18 01:58:43 DownloadPdtThread: saved new pdt to '/home/opendcs/OPENDCS/pdt with 205 modifications
+INFO    01/19/18 01:58:43 Lock file '/home/opendcs/OPENDCS/pdt.lock' removed.
+INFO    01/19/18 02:03:26 Connecting to jdbc:postgresql://localhost/open_tsdb as user 'tsdbadm'
+INFO    01/19/18 02:03:26 Connected to DECODES SQL database version 15
+INFO    01/19/18 02:03:26 Constructing OpenTsdbSqlDbIO
+INFO    01/19/18 02:07:57 DCS Toolkit GUI Version OPENDCS 6.4 RC07 built on Jan 12, 2018 Starting
+INFO    01/19/18 02:07:57 Loading Channel Map from '/home/opendcs/OPENDCS/chans_by_baud.txt'
+INFO    01/19/18 02:07:57 Channel map successfully loaded.
+INFO    01/19/18 02:07:57 Loading NwsXref from '/home/opendcs/OPENDCS/nwsxref.txt'
+INFO    01/19/18 02:07:57 Parsed NwsXref File '/home/opendcs/OPENDCS/nwsxref.txt' - 9838 entries.
+INFO    01/19/18 02:08:03 Connecting to jdbc:postgresql://localhost/open_tsdb as user 'tsdbadm'
+INFO    01/19/18 02:08:03 Connected to DECODES SQL database version 15
+INFO    01/19/18 02:08:03 Constructing OpenTsdbSqlDbIO

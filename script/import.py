@@ -167,11 +167,11 @@ def storeJSON(j, fmt):
 
 
 def postJSON(infile, fmt="hydroJSON"):
-  try:
     raw = []
     endflag = False
     for line in infile:
       line = line.rstrip()
+      if line == "": continue
       # Fix lazy JSON errors (looking at you Mike)
       if len(raw) > 0 and len(line) > 0:
         if len(raw[-1]) > 1:
@@ -185,7 +185,10 @@ def postJSON(infile, fmt="hydroJSON"):
       # End Fix
       if line == "{" and endflag:
         if raw != []:
-          storeJSON("\n".join(raw), fmt)
+          try:
+            storeJSON("\n".join(raw), fmt)
+          except:
+            log ("error occured while parsing json",level = "ERR")
         del raw
         raw = ["{"]
       else:
@@ -195,8 +198,6 @@ def postJSON(infile, fmt="hydroJSON"):
         endflag = True
       else:
         endflag = False
-  except Exception, e:
-    log(str(e), level="FATAL")
 
 
 ###############################################################################
@@ -230,7 +231,7 @@ if args.file:
 if args.ipaddress and args.port:
   print "Listening to %s port %s" % (args.ipaddress, args.port)
   sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-  sock.connect((args.ipaddress, int(args.port)))
+  sock.bind((args.ipaddress, int(args.port)))
   infile = sock.makefile()
 
 os.environ["TZ"] = "UTC"
