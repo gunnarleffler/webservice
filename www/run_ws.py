@@ -70,6 +70,7 @@ def outputHydroJSON():
 
 @app.route('/csv', methods=['GET', 'POST'])
 def outputCSV():
+  mimetype="text/plain"
   ws = wslib.dataService("../data/hydro.db")
   config = wslib.ddWebServiceConfig()
   config.parseParameters(request.args)
@@ -107,7 +108,7 @@ def outputCSV():
         output += ",,"
     output += "\n"
   ws.disconnect()
-  return Response("\n".join(output), mimetype=mimetype)
+  return Response(output, mimetype=mimetype)
 
 
 @app.route('/html', methods=['GET', 'POST'])
