@@ -10,7 +10,7 @@ this program imports data into the webservice database data/hydro.db
 
 import sys
 sys.path.append("../www")
-
+import socket
 import atexit
 import argparse
 import datetime
@@ -202,6 +202,9 @@ def postJSON(infile, fmt="hydroJSON"):
 ###############################################################################
 p = argparse.ArgumentParser(description=helpText)
 p.add_argument('-f', '--file', help='Specify input file (default is STDIN)')
+p.add_argument('-a', '--ipaddress', help='remote ip address to bind')
+p.add_argument('-p', '--port', help='remote port to listen')
+
 p.add_argument(
     '-hj',
     '--hydroJSON',
@@ -223,6 +226,12 @@ if args.file:
     infile = open(args.file, "r")
   except:
     log("File Not found: " + args.file, level="FATAL")
+
+if args.ipaddress and args.port:
+  print "Listening to %s port %s" % (args.ipaddress, args.port)
+  sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  sock.connect((args.ipaddress, args.port))
+  infile = sock.makefile()
 
 os.environ["TZ"] = "UTC"
 time.tzset()
