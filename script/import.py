@@ -230,7 +230,7 @@ if args.file:
 if args.ipaddress and args.port:
   print "Listening to %s port %s" % (args.ipaddress, args.port)
   sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-  sock.connect((args.ipaddress, args.port))
+  sock.connect((args.ipaddress, int(args.port)))
   infile = sock.makefile()
 
 os.environ["TZ"] = "UTC"
