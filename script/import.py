@@ -52,9 +52,20 @@ paths = []
 #-----------------------------------------------
 
 
+def repeatLog(n):
+  time.sleep(n)
+  output = sys.stderr
+  output.write("import.py is running\n")
+  repeatLog(n)
+
+
+#repeatLog(2)
+
+
 def storeCwmsMeta(d):
-  r = hydro_lib.rec(
-      [], table="sitecatalog", keys=hydro_lib.schemas["sitecatalog"])
+  r = hydro_lib.rec([],
+                    table="sitecatalog",
+                    keys=hydro_lib.schemas["sitecatalog"])
   for key in pisces_cwms_map:
     r[key] = d[pisces_cwms_map[key]]
   logSQL(r.store(cur))
@@ -63,8 +74,9 @@ def storeCwmsMeta(d):
 
 def storeHydroJSONMeta(siteid, site):
   # Store metadata that comes in from a HydroJSON file
-  r = hydro_lib.rec(
-      [], table="sitecatalog", keys=hydro_lib.schemas["sitecatalog"])
+  r = hydro_lib.rec([],
+                    table="sitecatalog",
+                    keys=hydro_lib.schemas["sitecatalog"])
   for key in pisces_cwms_map:
     r[key] = site.get(key, "")
   r["siteid"] = siteid
@@ -129,8 +141,10 @@ def tsFromList(lst):
   for line in lst:
     # try:
     tstamp = tstamp = dateparser.parse(line[0], fuzzy=True)
+    #print "&&&&&&&tstamp before: ", tstamp
     if tstamp.tzinfo == None:
       tstamp = mytz.localize(tstamp)
+    #print "&&&&&&&tstamp after: ", tstamp
     ts.insert(tstamp, float(line[1]))
   # except:
   #  log ("Error Parsing %s" % str(line), level = "ERR")
@@ -140,26 +154,31 @@ def tsFromList(lst):
 def storeJSON(j, fmt):
   j = json.loads(j)
   replace_flag = False
+  log("Storing JSON")
   for siteid in j:
-    log("Processing site: %s" % siteid)
+    #log("Processing site: %s" % siteid)
     storeHydroJSONMeta(siteid, j[siteid])
     for tsid in j[siteid]["timeseries"]:
-      log("Processing ts: %s" % tsid)
+      #log("Processing ts: %s" % tsid)
       parts = tsid.split(".")
-      r = hydro_lib.rec(
-          [], table="seriescatalog", keys=hydro_lib.schemas["seriescatalog"])
+      r = hydro_lib.rec([],
+                        table="seriescatalog",
+                        keys=hydro_lib.schemas["seriescatalog"])
       r = r.get(cur, "name", tsid)
       r["name"] = tsid
       r["tablename"] = hydro_lib.makeTablename(tsid)
       r["siteid"] = siteid
       for key in ["enabled", "units", "parameter", "timeinterval", "timezone"]:
-        r[key] = j[siteid]["timeseries"].get(key, "")
+        #r[key] = j[siteid]["timeseries"].get(key, "")
+        r[key] = j[siteid]["timeseries"][tsid].get(key, "")
+
       ts = tsFromList(j[siteid]["timeseries"][tsid].get("values", []))
       if len(ts.data) > 0:
         newdata = hydro_lib.writeTS(
             r["tablename"], ts, dbconn, replace_table=replace_flag)
         logSQL(newdata)
-      log("Wrote %d values: %s" % (len(ts.data), hydro_lib.status))
+      #log("Wrote %d values: %s" % (len(ts.data), hydro_lib.status))
+      #print "Data: ", ts.data
       #r["notes"] = getTSextents(tsid)
       # print r["notes"]
       logSQL(r.store(cur))
@@ -167,37 +186,40 @@ def storeJSON(j, fmt):
 
 
 def postJSON(infile, fmt="hydroJSON"):
-    raw = []
-    endflag = False
-    for line in infile:
-      line = line.rstrip()
-      if line == "": continue
-      # Fix lazy JSON errors (looking at you Mike)
-      if len(raw) > 0 and len(line) > 0:
-        if len(raw[-1]) > 1:
-          if line.strip()[0] != "}" and raw[-1][-1] != "," and "{" not in raw[
-                  -1] and "[" not in raw[-1]:
-            raw[-1] += ","
-          if line.strip()[0] == "}" and raw[-1][-1] == ",":
-            raw[-1] = raw[-1][:-1]
-          if line.strip()[0] == "]" and raw[-1][-1] == ",":
-            raw[-1] = raw[-1][:-1]
-      # End Fix
-      if line == "{" and endflag:
-        if raw != []:
-          try:
-            storeJSON("\n".join(raw), fmt)
-          except:
-            log ("error occured while parsing json",level = "ERR")
-        del raw
-        raw = ["{"]
-      else:
-        if len(line) > 0:
-          raw.append(line)
-      if line == "}":
-        endflag = True
-      else:
-        endflag = False
+  raw = []
+  endflag = False
+  log("Posting JSON")
+  for line in infile:
+    line = line.rstrip()
+    if line == "":
+      continue
+    # Fix lazy JSON errors (looking at you Mike)
+    if len(raw) > 0 and len(line) > 0:
+      if len(raw[-1]) > 1:
+        if line.strip()[0] != "}" and raw[-1][-1] != "," and "{" not in raw[
+            -1] and "[" not in raw[-1]:
+          raw[-1] += ","
+        if line.strip()[0] == "}" and raw[-1][-1] == ",":
+          raw[-1] = raw[-1][:-1]
+        if line.strip()[0] == "]" and raw[-1][-1] == ",":
+          raw[-1] = raw[-1][:-1]
+    # End Fix
+    if line == "{" and endflag:
+      if raw != []:
+        try:
+          storeJSON("\n".join(raw), fmt)
+        except:
+          pass
+          #log ("error occured while parsing json",level = "ERR")
+      del raw
+      raw = ["{"]
+    else:
+      if len(line) > 0:
+        raw.append(line)
+    if line == "}":
+      endflag = True
+    else:
+      endflag = False
 
 
 ###############################################################################
